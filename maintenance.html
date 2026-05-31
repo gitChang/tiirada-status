@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TiiRADA | Under maintenance</title>
+    <meta name="description" content="TiiRADA is currently under scheduled maintenance.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='11' fill='%236B8A9E'/><text x='32' y='44' font-size='36' font-family='Inter, sans-serif' font-weight='800' fill='%23EEEEEE' text-anchor='middle'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #181818;
+        --surface: #222222;
+        --steel: #6B8A9E;
+        --steel-dark: #4E6B7D;
+        --text: #EEEEEE;
+        --muted: #AAAAAA;
+        --line: rgba(107,138,158,0.15);
+        --shadow: 0 24px 70px rgba(0,0,0,0.5);
+      }
+      * { box-sizing: border-box; }
+      html, body { min-height: 100%; }
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(107,138,158,0.12), transparent 30%),
+          radial-gradient(circle at top right, rgba(78,107,125,0.08), transparent 22%),
+          linear-gradient(180deg, #111111 0%, var(--bg) 100%);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      a { color: var(--steel); text-decoration: none; }
+      a:hover { color: var(--text); }
+      .wrap { max-width: 600px; margin: 0 auto; padding: 28px 20px 64px; flex: 1; display: flex; flex-direction: column; }
+      .topbar { display: flex; align-items: center; gap: 12px; margin-bottom: 48px; }
+      .mark {
+        width: 56px; height: 56px; border-radius: 11px;
+        background: linear-gradient(135deg, var(--steel), var(--steel-dark));
+        display: grid; place-items: center;
+        border: 1px solid var(--line);
+        box-shadow: 0 14px 36px rgba(107,138,158,0.15);
+        flex-shrink: 0;
+      }
+      .mark span { font-size: 1.8rem; font-weight: 800; color: var(--text); }
+      .brand h1 { margin: 0; font-size: 1.2rem; letter-spacing: 0; }
+      .brand p { margin: 2px 0 0; color: var(--muted); font-size: 0.92rem; }
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .status { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+      .dot {
+        width: 10px; height: 10px; border-radius: 999px;
+        background: #C9A84C;
+      }
+      .status span { color: #C9A84C; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+      h1 { margin: 0 0 16px; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; letter-spacing: 0; }
+      p { margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
+      .action-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px;
+        border-radius: 8px; border: 1px solid transparent; font-weight: 700;
+        transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      }
+      .btn:hover { transform: translateY(-1px); }
+      .btn.primary { background: linear-gradient(135deg, var(--steel), var(--steel-dark)); color: var(--text); }
+      .btn.secondary { background: rgba(255,255,255,0.03); border-color: var(--line); color: var(--text); }
+      .btn.secondary:hover { border-color: var(--steel); }
+      .footer { padding: 20px 0; text-align: center; }
+      .footer small { color: var(--muted); line-height: 1.6; }
+      .footer a { color: var(--steel); font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="mark"><span>T</span></div>
+        <div class="brand">
+          <h1>TiiRADA</h1>
+          <p>Find the perfect hand for your task.</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="status"><div class="dot"></div><span>Under Maintenance</span></div>
+        <h1>Currently under maintenance.</h1>
+        <p>
+          TiiRADA is undergoing scheduled maintenance to serve you better.
+          We'll be back as soon as possible. Thank you for your patience.
+        </p>
+        <div class="action-row">
+          <a class="btn secondary" href="mailto:support@inbox.tiirada.com">Contact support</a>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <small>Questions? <a href="mailto:support@inbox.tiirada.com">support@inbox.tiirada.com</a></small>
+      </footer>
+    </div>
+  </body>
+</html>
